@@ -8,29 +8,82 @@
 				background: #02B0B0;
 			}
 			h1{
+				font-size: 30px;
 				text-align: center;
-				font-size: 35px;
 			}
-			form{
-				font-size: 23px;
-				text-align: center;
-
+			td{
+				padding: 12px 14px;
+				font-size: 24px;
 			}
-			div{
-				padding: 7px 0px;
+			table{
+				margin:auto;
 			}
 		</style>
 	</head>
 	<body>
-		<h1><u><i> Application Form </i></u></h1>
 		<form>
-			<div><b> Frist Name :-  </b> <input type="text"> </div>
-			<div><b> Middle Name :- </b> <input type="text"> </div>
-			<div><b> Last Name :-   </b> <input type="text"> </div>
-			<div><b> Date of Brithday :- </b> <input type="date"> </div>
-			<div><b> Age :- </b> <input type="number"> </div>
-			<div><b> Gender :- </b> <input type="radio" name="gender">Male <input type="radio" name="gender">Female </div>
-			<div> <input type="submit"> <input type="reset"> </div>
+			<table border="3">
+				<thead>
+					<tr>
+						<th colspan="2">
+							<h1><u> Application Form </u></h1>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+					<tr>
+						<td><b> Frist Name :-  </b></td>
+						<td> <input type="text"> </td>
+					</tr>
+					<tr>
+						<td><b> Middle Name :- </b></td> 
+						<td><input type="text"> </td> 
+					</tr>
+					<tr>
+						<td><b> Last Name :- </b> </td>
+						<td><input type="text"> </td> 
+					</tr>
+					<tr>
+						<td><b> Contact :-  </b></td>
+						<td><input type="tel"> </td> 
+					</tr>
+					<tr>
+						<td><b> E-mail id :- </b> </td>
+						<td><input type="email"> </td> 
+					</tr>
+					<tr>
+						<td><b> Password :- </b> </td>
+						<td> <input type="password"> </td> 
+					</tr>
+					<tr>
+						<td><b> Confirm Password :- </b></td>
+						<td> <input type="password"> </td> 
+					</tr>
+					<tr>
+						<td><b> Date of Brithday :- </b> </td>
+						<td> <input type="date"> </td> 
+					</tr>
+					<tr>
+						<td><b> Gender :- </b> </td>
+						<td> <input type="radio" name="gender">Male <input type="radio" name="gender">Female </td> 
+					</tr>
+					<tr>
+						<td><b> Age :- </b> </td>
+						<td> <input type="number"> </td> 
+					</tr>
+					<tr>
+						<td><b> Programming Languages :- </b></td>
+						<td> <input type="checkbox"> Java  
+							<input type="checkbox"> JavaScript
+							<input type="checkbox"> Python </td> 
+					</tr>
+					<tr> 
+						<td colspan="2" style="text-align: center;"> <input type="submit"> <input type="reset"> </td> 
+					</tr>
+				</tbody>
+			</table>
 		</form>
 	</body>
 </html>
