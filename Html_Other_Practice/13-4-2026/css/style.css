@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.logo{
+	font-size: 25px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+nav a{
+    width: 105px;
+    height: 23px;
+    margin: 0px 15px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+a:hover{
+	background: skyblue;
+	color: white;
+	padding: 5px 8px;
+	border-radius: 10px;
+	border: 2px solid blue;
+    transform: scale(1.1);
+}
+
+nav{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about, .mission{
+	margin: 40px 0px;
+    background: #ccf8ff;
+	background: linear-gradient(129deg, rgba(204, 248, 255, 1) 10%, rgba(92, 192, 250, 1) 94%);
+    padding: 50px 0;
+}
+
+.text h1 span, .text h2 span{
+    color: blue;
+}
+
+.text{
+    width: 750px;
+}
+
+.text p{
+    margin: 20px 0px;
+}
+
+.aboutimage{
+	width: 600px;
+	height: 350px;
+	border-radius: 20px;
+	border: 4px solid white;
+    transition: 0.3s;
+}
+
+.aboutimage:hover{
+    transform: scale(1.1);
+}
+
+.services{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.omvimage{
+	width: 670px;
+	height: 350px;
+	border-radius: 20px;
+	border: 4px solid skyblue;
+    transition: 0.3s;
+}
+
+.omvimage:hover{
+    transform: scale(1.1);
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card{
+    background: white;
+    padding:  20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    line-height: 30px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img h3 p{
+    padding: 30px 0px;
+}
+
+button{
+	background: lightblue;
+	border-radius: 20px 0px 20px 20px;
+	padding: 8px 10px;
+	border: 2px solid black;
+	font-size: 20px;
+}
+
+button:hover{
+	border: 2px solid blue;
+	background: skyblue;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.plan{
+    font-size: 33px;
+}
+
+.cardbg{
+    background: #4297ff;
+    background: linear-gradient(129deg, rgba(66, 151, 255, 1) 13%, rgba(62, 109, 250, 1) 73%);
+}
+
+ul{
+    list-style: none;
+}
+
+.tick{
+    color: green;
+    font-weight: bold;
+}
+
+.cross{
+    color: red;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
