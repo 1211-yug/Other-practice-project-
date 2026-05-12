@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 1800px;
+    height: auto;
+    inset: 0;
+    margin: auto;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.headerbar{
+    width: 1800px;
+    height: 100px;
+    position: relative;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(40, 40, 40);
+}
+
+.logo img{
+    width: 200px;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav div{
+    font-size: 23px;
+    padding-left: 20px;
+}
+
+.nav div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contact{
+    color: rgb(22, 22, 22);
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bgimg img{
+    width: 100%;
+    height: 1150px;
+    margin-top: -100px;
+}
+
+.bgimg .bg-left{
+    color: #2b2b2b;
+    position: absolute;
+    font-size: 90px;
+    padding-top: 250px;
+    padding-left: 50px;
+    line-height: 90px;
+}
+
+.bg-right{
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    color: #3b3b3b;
+    font-size: 30px;
+    bottom: 330px;
+    right: 20px;
+}
+
+.bg-right .btn{
+    width: 200px;
+    height: 60px;
+    background-color: #1E1E1E;
+    margin-top: 30px;
+    padding: 10px 45px;
+}
+
+.bg-right .btn button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bg-right .btn button{
+    font-size: 20px;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+.contact-right{
+    position: absolute;
+    right: 0;
+    bottom: -131px;
+    padding: 15px 40px;
+    color: white;
+    background: #1E1E1E;
+    font-size: 25px;
+}
+
+.block{
+    margin-block: 220px;
+}
+
+.flex{
+    display: flex;
+}
+
+.head-light img{
+    width: 520px;
+    height: 305px;
+    margin-left: 25px;
+    transition: transform 1s;
+}
+
+.head-light img:hover{
+    transform: scale(1.1);
+}
+
+.headlight-title{
+    font-size: 45px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    color: #1E1E1E;
+    position: absolute;
+    right: 250px;
+}
+
+.miroor{
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+.miroor img{
+    transition: transform 1s;
+}
+
+.miroor img:hover{
+    transform: scale(1.1);
+}
+
+.miroor-text{
+    font-size: 23px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    color: #1E1E1E;
+    position: absolute;
+    right: 270px;
+    margin-top: 20px;
+}
+
+.miroor-text .btn{
+    width: 250px;
+    height: 60px;
+    background-color: #1E1E1E;
+    margin-top: 30px;
+    padding: 15px 25px;
+}
+
+.miroor-text .btn button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.miroor-text .btn button{
+    font-size: 20px;
+    color: white;
+    border: none;
+    background: transparent;
+}
+
+.back-text{
+    padding: 270px 0px 0px 150px;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+
+.back-text h1{
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 60px;
+    color: #1E1E1E;
+}
+
+.back-text p{
+    font-size: 25px;
+    color:#383838;
+}
+
+.textblock{
+    margin-block: 200px 80px;
+}
+
+.textblock .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pr-po h1{
+    color: #1E1E1E;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 80px;
+    margin-left: 25px;
+}
+
+.pr-po p{
+    color: #747474;
+    font-size: 26px;
+    font-weight: 500;
+    padding-top: 90px;
+}
+
+.slider{
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 100px auto;
+}
+
+.slides{
+    display: flex;
+    width: 700%;
+    height: 100%;
+    transition: 1s;
+}
+
+.slide{
+    width: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.slide img:hover{
+    transform: scale(1.1);
+}
+
+input{
+    display: none;
+}
+
+#slide1:checked ~ .slides{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .slides{
+    margin-left: -100%;
+}
+
+#slide3:checked ~ .slides{
+    margin-left: -200%;
+}
+
+#slide4:checked ~ .slides{
+    margin-left: -300%;
+}
+
+#slide5:checked ~ .slides{
+    margin-left: -400%;
+}
+
+#slide6:checked ~ .slides{
+    margin-left: -500%;
+}
+
+#slide7:checked ~ .slides{
+    margin-left: -600%;
+}
+
+.navigation{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation label{
+    height: 15px;
+    width: 15px;
+    border:2px solid white;
+    margin-inline:5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.conn h1{
+    color: #1E1E1E;
+    margin-block: 230px 80px;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.name{
+    width: 570px;
+    height: 255px;
+    background-color: #E6E6E6;
+    margin-right: 50px;
+    padding: 20px 44px 10px 30px;
+    margin-bottom: 170px;
+}
+
+.name p{
+    color: #353535;
+    font-size: 26px;
+}
+
+.name h4{
+    color: #6D6D6D;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 92px;
+}
+
+.name .bottom2{
+    padding-top: 57px;
+}
+
+.footer-container{
+    width: 1800px;
+    height: auto;
+    margin-inline: 25px;
+}
+
+.footer-container .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 243px;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+
+.footer1{
+    width: 420px;
+    height: auto;
+}
+
+.footer1 img{
+    width: 400px;
+    margin-bottom: 200px;
+}
+
+.footer1 div{
+    color: #343434;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.footer2 h2{
+    color: #343434;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.footer3 span{
+    margin-left: 420px;
+    font-size: 35px;
+}
+
+.footer3 div{
+    color: #717171;
+    font-size: 21px;
+    margin-block: 242px 100px;
+    cursor: pointer;
+}
