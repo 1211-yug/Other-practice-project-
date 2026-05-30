@@ -1,0 +1,23 @@
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .user-details .category{
+        width: 100%;
+    }
+
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
