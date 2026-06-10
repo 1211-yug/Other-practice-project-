@@ -213,11 +213,11 @@ a:hover {
     border-bottom: 2px solid #FEC448;
 }
 
-.home-section .home-intro p{
+.home-section .home-intro p {
     font-size: 20px;
 }
 
-.home-image img{
+.home-image img {
     width: 450px;
     height: 450px;
     object-fit: cover;
@@ -227,7 +227,7 @@ a:hover {
     z-index: -2;
 }
 
-.anim-elements{
+.anim-elements {
     position: absolute;
     top: 0;
     left: 0;
@@ -237,70 +237,108 @@ a:hover {
     z-index: -1;
 }
 
-.anim-elements .anim-element{
+.anim-elements .anim-element {
     position: absolute;
     font-size: 30px;
 }
 
-.anim-elements .anim-element:nth-child(1){
+.anim-elements .anim-element:nth-child(1) {
     top: 12%;
     left: 15%;
     color: var(--primary-color);
     animation: aniOne 13s infinite linear alternate;
 }
 
-.anim-elements .anim-element:nth-child(2){
+.anim-elements .anim-element:nth-child(2) {
     bottom: 15%;
     left: 45%;
     color: var(--primary-color);
     animation: aniTwo 13s infinite linear alternate;
 }
 
-.anim-elements .anim-element:nth-child(3){
+.anim-elements .anim-element:nth-child(3) {
     bottom: 20%;
     left: 30%;
     color: var(--primary-color);
     animation: aniThree 13s infinite linear alternate;
 }
 
-.anim-elements .anim-element:nth-child(4){
+.anim-elements .anim-element:nth-child(4) {
     bottom: 15%;
     right: 25%;
     color: var(--primary-color);
     animation: aniFour 13s infinite linear alternate;
 }
 
-.anim-elements .anim-element:nth-child(5){
+.anim-elements .anim-element:nth-child(5) {
     top: 10%;
     right: 20%;
     color: var(--primary-color);
     animation: aniThree 13s infinite linear alternate;
 }
 
-@keyframes aniOne{
-    0% {transform: translate(0, 0) rotate(0);}
-    40% {transform: translate(141px, 72px) rotate(75deg);}
-    80% {transform: translate(-40px, 72px) rotate(145deg);}
-    100% {transform: translate(0, 0) rotate(0);}
+@keyframes aniOne {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    40% {
+        transform: translate(141px, 72px) rotate(75deg);
+    }
+
+    80% {
+        transform: translate(-40px, 72px) rotate(145deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
 }
 
-@keyframes aniTwo{
-    0% {transform: translate(0, 0) rotate(0) scale(1);}
-    20% {transform: translate(73px, -1px) rotate(75deg) scale(.9);}
-    60% {transform: translate(83px, 122px) rotate(108deg) scale(1.2);}
-    100% {transform: translate(0, 0) rotate(0) scale(1);}
+@keyframes aniTwo {
+    0% {
+        transform: translate(0, 0) rotate(0) scale(1);
+    }
+
+    20% {
+        transform: translate(73px, -1px) rotate(75deg) scale(.9);
+    }
+
+    60% {
+        transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0) scale(1);
+    }
 }
 
-@keyframes aniThree{
-    0% {transform: translate(-310px, 151px) rotate(0);}
-    100% {transform: translate(201px, -230px) rotate(150deg);}
+@keyframes aniThree {
+    0% {
+        transform: translate(-310px, 151px) rotate(0);
+    }
+
+    100% {
+        transform: translate(201px, -230px) rotate(150deg);
+    }
 }
 
-@keyframes aniFour{
-    0% {transform: translate(61px, -99px) rotate(0);}
-    20% {transform: translate(5px, -119px) rotate(60deg);}
-    60% {transform: translate(-223px, 134px) rotate(120deg);}
-    100% {transform: translate(-1px, 0) rotate(0deg);}
+@keyframes aniFour {
+    0% {
+        transform: translate(61px, -99px) rotate(0);
+    }
+
+    20% {
+        transform: translate(5px, -119px) rotate(60deg);
+    }
+
+    60% {
+        transform: translate(-223px, 134px) rotate(120deg);
+    }
+
+    100% {
+        transform: translate(-1px, 0) rotate(0deg);
+    }
 }
 
 @media (max-width: 767px) {
@@ -317,12 +355,64 @@ a:hover {
         font-size: 45px;
     }
 
-    .home-section .home-intro p{
+    .home-section .home-intro p {
         font-size: 18px;
     }
 
-    .home-image img{
+    .home-image img {
         width: 300px;
         height: 300px;
+    }
+}
+
+/* Section */
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.about-text p{
+    font-size: 18px;
+}
+
+.section-heading{
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.section-heading h3{
+    font-size: 50px;
+    margin: 0;
+    color: var(--dark-color);
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-heading{
+        padding-bottom: 40px;
+    }
+
+    .section-heading h3{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px){
+    .section{
+        padding: 60px 0;
+    }
+    
+    .section-heading{
+        padding-bottom: 30px;
+    }
+
+    .section-heading h3{
+        font-size: 38px;
     }
 }
