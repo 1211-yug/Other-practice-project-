@@ -75,12 +75,84 @@ comment */
 
 // Conditional (Ternary) Operator
 
-let age = 12;
+// let age = 12;
 
-if (age >= 18) {
-    console.log("Adult");
+// if (age >= 18) {
+//     console.log("Adult");
+// }
+
+// if (age < 18) {
+//     console.log("Minor");
+// }
+
+// if else statement
+
+// let num = 15;
+
+// if (num % 2 === 0) {
+//     console.log("Number is Even");
+// }
+// else {
+//     console.log("Number is Odd");
+// }
+
+// else if statement
+
+// let mode = "";
+// let color;
+
+// if (mode === "dark") {
+//     color = "black";
+// } else if (mode === "blue") {
+//     color = "blue";
+// } else if (mode === "pink") {
+//     color = "pink";
+// } else {
+//     color = "white";
+// }
+
+// console.log(color);
+
+// Ternary operators
+
+// let age = 19;
+
+// let result = age >= 18 ? "Adult" : "Minor";
+// console.log(result);
+
+
+/* Example */
+
+console.log("====== Example =======");
+
+// Que 1 
+
+// let num = prompt("Enter a number :-");
+
+// if (num % 5 === 0) {
+//     console.log(num, "is a multiple of 5");
+// } else {
+//     console.log(num, "is not a multiple of 5");
+// }
+
+// Que 2
+
+let score = prompt("Enter your score (0-100):- ");
+let grade;
+
+if (score >= 90 && score <= 100) {
+    grade = "A";
+} else if (score >= 80 && score <= 89) {
+    grade = "B";
+} else if (score >= 70 && score <= 79) {
+    grade = "C";
+} else if (score >= 60 && score <= 69) {
+    grade = "D";
+} else if (score >= 40 && score <= 59) {
+    grade = "E";
+} else {
+    grade = "Fail";
 }
 
-if (age < 18) {
-    console.log("Minor");
-}
+console.log("Grade is =", grade);
+
