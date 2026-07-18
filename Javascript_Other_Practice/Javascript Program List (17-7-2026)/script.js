@@ -306,25 +306,49 @@ console.log("<<<==== Que 12. ====>>>");
 console.log("<<<==== Que 13. ====>>>");
 
 {
+    let apps = ["YouTube", "SnapChat", "Twitter"];
 
+    let apps2 = ["Instagram", "Facebook", "Github"];
+
+    let merge = apps.concat(apps2);
+
+    console.log(merge);
 }
 
 // Que 14.
 console.log("<<<==== Que 14. ====>>>");
 
 {
+    let games = ["FreeFire", "BGMI", "Call of Duty"];
 
+    let result = games.toString();
+
+    console.log(result);
 }
 
 // Que 15.
 console.log("<<<==== Que 15. ====>>>");
 
 {
+    let num = [1, 2, [3, 4], [5, 6]];
 
+    console.log(num.flat());
 }
 
 // Que 16.
 console.log("<<<==== Que 16. ====>>>");
+
+{
+    let fruits = ["Apple", "Banana"];
+
+    console.log(Array.isArray(fruits));
+}
+
+// Object Programs
+console.log("<<<===>>> Object Programs <<<===>>>");
+
+// Que 1.
+console.log("<<<==== Que 1. ====>>>");
 
 {
 
