@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/cooking.png" type="image/x-icon">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Animation cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/Recipe finder logo.png" class="img-fluid" width="65" alt="">
+                    <span class="ms-2 logo-text">Recipe Finder</span>
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav mx-auto text-center fw-medium">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Recipes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Categories</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Favorites</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                    </ul>
+
+                    <div class="text-center mt-3 mt-lg-0">
+                        <button class="favorite-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            My Favorites
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+
+        <!-- Home section -->
+        <section class="hero-section">
+            <div class="container">
+
+                <div class="row align-items-center gy-5">
+
+                    <!-- Left Side -->
+                    <div class="col-lg-6">
+
+                        <span class="badge bg-warning text-dark px-3 py-2 mb-3">🍴 Discover Delicious Recipes</span>
+
+                        <h1 class="hero-title">Find The Perfect <span>Recipe</span> For Every Mealm</h1>
+
+                        <p class="hero-text">Search thousands of tasty recipes using ingredients, recipe names, or
+                            categories. Cook delicious meals with easy step-by-step instructions. </p>
+
+                        <!-- Search Box -->
+                        <div class="search-box">
+                            <input type="text" class="form-control" placeholder="Search recipes...">
+                            <button class="btn search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+
+                        <!-- Popular -->
+                        <div class="popular-tags mt-4">
+                            <span>Popular :- </span>
+                            <a href="#">Sushi</a>
+                            <a href="#">Pizza</a>
+                            <a href="#">Burger</a>
+                            <a href="#">Pasta</a>
+                            <a href="#">Cake</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="col-lg-6 text-center">
+                        <img src="./assets/right_side_image.png" class="img-fluid hero-img" alt="Food">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+
+    </footer>
+
+
+    <!-- Javascript link -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Animation cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
