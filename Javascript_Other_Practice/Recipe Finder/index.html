@@ -91,7 +91,8 @@
 
                         <h1 class="hero-title">Find The Perfect <span>Recipe</span> For Every Mealm</h1>
 
-                        <p class="hero-text">Search thousands of tasty recipes using ingredients, recipe names, or categories. Cook delicious meals with easy step-by-step instructions. </p>
+                        <p class="hero-text">Search thousands of tasty recipes using ingredients, recipe names, or
+                            categories. Cook delicious meals with easy step-by-step instructions. </p>
 
                         <div class="popular-tags mt-4">
                             <span>Popular :- </span>
@@ -200,15 +201,13 @@
 
                 <div class="search-box" data-aos="zoom-in-up">
 
-                    <input type="text" class="form-control" placeholder="Search recipes.....">
-                    <button class="btn search-btn">
-                        Search
-                    </button>
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search recipes.....">
+                    <button class="btn search-btn" id="searchBtn"> Search </button>
 
                 </div>
 
                 <div class="text-center mt-5 mb-5" data-aos="zoom-in-up">
-                    <h2 class="search-heading">Popular Searches : </h2>
+                    <h2 class="search-heading"> Popular Searches : </h2>
                 </div>
 
                 <div class="row g-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
@@ -255,14 +254,101 @@
 
                     </div>
                 </div>
+
+                <!-- ===== Card ===== -->
+                <div class="text-center mt-5 mb-4" id="resultsHeading" style="display:none;">
+                    <h2 class="search-heading fw-bold pb-2" id="resultsTitle"></h2>
+                </div>
+
+                <div class="row g-4" id="searchResults"></div>
+
+
             </div>
+
         </section>
 
     </main>
 
     <!-- Footer section -->
-    <footer>
+    <footer class="footer-section" data-aos="fade-up">
+        <div class="container">
 
+            <div class="row gy-4 py-5">
+
+                <div class="col-lg-3">
+                    <a class="navbar-brand d-flex align-items-center mb-3" href="#">
+                        <img src="./assets/Recipe finder logo.png" class="img-fluid" width="55" alt="">
+                        <span class="ms-2 logo-text">Recipe Finder</span>
+                    </a>
+                    <p class="footer-text">Discover, cook and enjoy delicious recipes from around the world. </p>
+                    <div class="footer-socials mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="footer-heading fs-4">Explore</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Recipes</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Search</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i> My
+                                Favorites</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="footer-heading fs-4">Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Sushi</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Pizza</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Burger</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Pasta</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: rgb(255, 158, 0);"></i>
+                                Cake</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="footer-heading fs-4">Contact Us</h6>
+                    <ul class="footer-links px-1">
+                        <li><a href="#"><i class="fa-regular fa-envelope" style="color: rgb(255, 158, 0);"></i>
+                                abc@recipefinder.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone" style="color: rgb(255, 158, 0);"></i> +91 234 567
+                                8900</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot" style="color: rgb(255, 158, 0);"></i> 123
+                                food street, kitchen City, 12345</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <h6 class="footer-heading fs-4">Newsletter</h6>
+                    <p class="footer-text"> Subscribe to get the latest recipes and updates.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="py-3 gap-2 text-center">
+                <p> &copy; 2026 Recipe Finder. All rights reserved.</p>
+            </div>
+
+        </div>
     </footer>
 
 
