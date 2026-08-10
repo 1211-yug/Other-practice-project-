@@ -15,7 +15,7 @@ body {
 
 
 
-/* ===== Header Section =====*/
+/* == Header Section == */
 .header-section {
     background: white;
     position: sticky;
@@ -70,7 +70,7 @@ body {
 
 
 
-/* ===== Hero Section =====*/
+/* == Hero Section ==*/
 .hero-section {
     height: 90vh;
     display: flex;
@@ -129,7 +129,7 @@ body {
 
 
 
-/* ===== Recipe Section =====*/
+/* == Recipe Section ==*/
 .recipe-section {
     background: white;
 }
@@ -176,7 +176,7 @@ body {
 
 
 
-/* ===== Search Section =====*/
+/* == Search Section ==*/
 .search-heading {
     color: #ff9900;
 }
@@ -233,8 +233,118 @@ body {
 
 
 
+/* == Footer section == */
+.footer-section {
+    background: #1b1b1b;
+    color: #cfcfcf;
+    margin-top: 40px;
+}
 
-/* ===== Animation Keyframes ===== */
+.footer-section .logo-text {
+    color: #ff9800;
+}
+
+.footer-text {
+    color: #a8a8a8;
+    font-size: 14.5px;
+    line-height: 1.7;
+}
+
+.footer-heading {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ff9800;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    background: #ff9800;
+}
+
+.footer-newsletter {
+    display: flex;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    border: none;
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.footer-newsletter input:focus {
+    outline: none;
+}
+
+.footer-newsletter button {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer-newsletter button:hover {
+    background: #fda829;
+}
+
+.footer-divider {
+    border-color: #333;
+    opacity: 1;
+    margin: 0;
+}
+
+.footer-bottom-text {
+    color: #888;
+    font-size: 13.5px;
+}
+
+.footer-bottom-text a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+
+/* == Animation Keyframes == */
 @keyframes right-img {
 
     0% {
@@ -251,7 +361,7 @@ body {
 
 }
 
-/* ===== Tablet ===== */
+/* == Tablet == */
 @media(max-width:991px) {
 
     .navbar-collapse {
@@ -281,7 +391,7 @@ body {
 
 }
 
-/* ===== Mobile ===== */
+/* == Mobile == */
 @media(max-width:576px) {
 
     .logo-text {
@@ -324,10 +434,8 @@ body {
     }
 
     .recipe-card img {
-
         width: 70px;
         height: 70px;
-
     }
 
     .recipe-card h6 {
